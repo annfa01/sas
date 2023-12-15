@@ -5,7 +5,7 @@ services:
     ports:
      - "8080:80"
     volumes:
-      - "./devops-demo-app:/usr/local/apache2/htdocs/"
+      - "./devops-demo-app:/var/www/html"
 
   db:
     image: mysql
