@@ -1,0 +1,21 @@
+version: "3"
+services:
+  php-demo-app:
+    image: php:5-apache
+    ports:
+     - "8080:80"
+    volumes:
+      - "/home/anech/demo-app-static/:/var/www/html/"
+
+  db:
+    image: mysql
+    command: --default-authentication-plugin=mysql_native_password
+    restart: always
+    ports:
+    - "3306:3306"
+    environment:
+      MYSQL_DATABASE: database01
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: user
+      MYSQL_PASSWORD: password
+

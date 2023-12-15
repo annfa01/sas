@@ -1,0 +1,13 @@
+Написать докер компоуз файл, упомянуть два сервиса php-apache mysql
+1. https://docs.docker.com/compose/compose-file/compose-file-v3/
+2. https://hub.docker.com/_/mysql/
+3. https://hub.docker.com/_/php
+Залить sql скрипт в базу mysql с помощи dbeaver
+1. скачать бобер 
+2. убедиться, что mysql запущен с публичными портами https://docs.docker.com/compose/compose-file/compose-file-v3/#ports
+3. возможны проблемы с доступом к сети вм, обратиться к жене
+Залить приложение в докер контейнер по пути /var/www/html
+https://docs.docker.com/compose/compose-file/compose-file-v3/#volumes
+1.узнать, как распаковать .tar.gz
+Вынуть из архива конфиг, и поменять значение и закинуть в приложение
+1. узнать данные авторизации для mysql 
