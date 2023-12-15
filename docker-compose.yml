@@ -5,7 +5,7 @@ services:
     ports:
      - "8080:80"
     volumes:
-      - "/home/anech/demo-app-static/:/var/www/html/"
+      - "./devops-demo-app:/var/www/html/"
 
   db:
     image: mysql
